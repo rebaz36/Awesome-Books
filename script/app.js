@@ -15,7 +15,7 @@ class BookSet {
   constructor(books = []) {
     this.books = books;
   }
-  
+
   // Events =>> Add a Books
   add(bookItem) {
     this.books.push(bookItem);
@@ -50,7 +50,7 @@ class BookSet {
   removeFromColl(data) {
     const arr = data.getAttribute('data-value').split('-');
     this.books = this.books.filter(
-    (item) => item.title + item.author !== arr[0] + arr[1],
+      (item) => item.title + item.author !== arr[0] + arr[1],
     );
     this.saveToStorage();
   }
