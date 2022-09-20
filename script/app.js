@@ -15,7 +15,6 @@ class BookSet {
     constructor(books = []) {
         this.books = books;
     }
-
     // Events =>> Add a Books
     add(bookItem) {
         this.books.push(bookItem);
@@ -62,7 +61,6 @@ class BookSet {
 }
 
 // Book Constructor function (representing a book).
-
 
 const coll = new BookSet();
 if (localStorage.getItem('bookItems')) {
