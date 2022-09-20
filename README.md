@@ -1,5 +1,3 @@
-
-
 # AWESOME BOOKS
 
 > This project is a part of microverse training program. It was build using HTML5, and JavaScript.
@@ -15,19 +13,11 @@ It is a web application that stores books titles and their authors In this proje
 
 5) Preserving data in the browser.
 
-## Video Description 
-Video description link[Video](https://www.loom.com/share/777ee4f15993418ea31e0fac91c2907c)
-
 ## Built With
 
 - HTML5, CSS and JavaScript
 - BOOTSTRAP 5
 - GITHUB and VSCODE
-
-## Live Demo (if available)
-
-[Live Demo Link](https://ndorrh.github.io/final-capstone/)
-
 
 ## Getting Started
 
@@ -50,25 +40,29 @@ The App is already deployed for you using Github pages
 
 ## Authors
 
-👤 **Author**
+👤 **Ndorh**
 
 - GitHub: [@githubhandle](https://github.com/ndorrh)
 - Twitter: [@twitterhandle](https://twitter.com/ndorrh)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ndorrh-oswald-ebu-82ab02236/)
 
+👤 **Rebaz**
+
+- GitHub: [@githubhandle](https://github.com/rebaz36)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/rebazf/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ndorrh/final-capstone/issues/1).
+Feel free to check the [issues page](https://github.com/rebaz36/Awesome-Books/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
--  Cindy Shin [Design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). 
--  Creative Commons license of the design
+-  Hats off to anyone who'se code has been used in the implementation of this project
 ## 📝 License
 
 This project is [MIT](/MIT.md) licensed.
