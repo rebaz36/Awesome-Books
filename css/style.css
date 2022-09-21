@@ -107,14 +107,6 @@ input {
   color: #fff;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  width: 20%;
-  justify-content: space-between;
-}
-
 .booksUl > li:last-child {
   border-right: none;
   padding-right: 1vh;
@@ -168,4 +160,12 @@ ul {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 20%;
+  justify-content: space-between;
 }
