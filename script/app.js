@@ -49,7 +49,7 @@ class BookSet {
   removeFromColl(data) {
     const arr = data.getAttribute('data-value').split('-');
     this.books = this.books.filter(
-      (item) => item.title + item.author !== arr[0] + arr[1]
+      (item) => item.title + item.author !== arr[0] + arr[1],
     );
     this.saveToStorage();
   }
@@ -98,5 +98,5 @@ navigator.forEach((n, index) => n.addEventListener('click', () => {
     booksAddition.classList.add('hidden');
     contactUs.classList.remove('hidden');
   }
-})
+}),
 );
