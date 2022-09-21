@@ -98,5 +98,4 @@ navigator.forEach((n, index) => n.addEventListener('click', () => {
     booksAddition.classList.add('hidden');
     contactUs.classList.remove('hidden');
   }
-}),
-);
+}));
