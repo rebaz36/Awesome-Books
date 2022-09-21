@@ -3,7 +3,6 @@ const inputTitle = document.getElementById('title');
 const inputAuthor = document.getElementById('author');
 const submitBtn = document.querySelector('.add-btn');
 const bookSection = document.querySelector('.books');
-
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -39,9 +38,9 @@ class BookSet {
     if (this) {
       const div = document.createElement('div');
       div.className = 'book-wraper';
-      div.innerHTML = `<h4 class="m-h">"${data.title}" by
-      ${data.author}</h4>
-      <button data-value="${data.title}-${data.author}" type="button" class ="remove-button">Remove</button>`;
+      div.innerHTML = `<h4 class='m-h'>'${data.title}' by
+                    ${data.author}</h4>
+                    <button data-value='${data.title}-${data.author}' type='button' class ='remove-button'>Remove</button>`;
       bookSection.appendChild(div);
     }
   }
@@ -60,7 +59,6 @@ class BookSet {
     localStorage.setItem('bookItems', JSON.stringify({ bookColl: this.books }));
   }
 }
-
 // Book Constructor function (representing a book).
 const coll = new BookSet();
 if (localStorage.getItem('bookItems')) {
@@ -69,7 +67,35 @@ if (localStorage.getItem('bookItems')) {
     coll.add(new Book(item.title, item.author));
   });
 }
-
 submitBtn.addEventListener('click', () => {
   coll.add(new Book(inputTitle.value, inputAuthor.value));
 });
+// Navigation
+const dateVisit = document.querySelector('.userDate');
+dateVisit.innerHTML = new Date();
+const listLink = document.querySelector('.books');
+const booksAddition = document.querySelector('.bookAdded');
+const contactUs = document.querySelector('.contactUs');
+const navigator = document.querySelectorAll('.book-nav');
+navigator.forEach((n, index) => n.addEventListener('click', () => {
+  navigator.forEach((link, number) => {
+    if (number === index) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+  if (index === 0) {
+    listLink.classList.remove('hidden');
+    booksAddition.classList.add('hidden');
+    contactUs.classList.add('hidden');
+  } else if (index === 1) {
+    listLink.classList.add('hidden');
+    booksAddition.classList.remove('hidden');
+    contactUs.classList.add('hidden');
+  } else {
+    listLink.classList.add('hidden');
+    booksAddition.classList.add('hidden');
+    contactUs.classList.remove('hidden');
+  }
+}));
