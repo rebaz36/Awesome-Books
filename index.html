@@ -8,12 +8,23 @@
     <title>Awesome Books</title>
   </head>
   <body>
+    <header class="books-header">
+        <h3>Awesome Books</h3>
+        <ul class="booksUl">
+            <li class="book-nav">List</li>
+            <li class="book-nav">Add new</li>
+            <li class="book-nav">Contact</li>
+        </ul>
+    </header>
+    <div class="visit-date">
+        <p class="userDate"></p>
+    </div>
     <section class="books-section">
       <h1>All Awesome Books</h1>
-      <div class="books"></div>
-      
+      <div class="books hidden"></div>
       <br />
       <hr class="m-hr">
+      <div class="bookAdded hidden">
       <h1>Add a New Book</h1>
       <form>
         <input
@@ -36,6 +47,7 @@
         <button type="button" class="add-btn">Add Book</button>
         <p></p>
       </form>
+    </div>
     </section>
     <script src="./script/app.js"></script>
   </body>
