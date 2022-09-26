@@ -53,4 +53,5 @@ class BookSet {
     localStorage.setItem('bookItems', JSON.stringify({ bookColl: this.books }));
   }
 }
-export default { BookSet };
+
+export default BookSet;

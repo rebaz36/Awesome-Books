@@ -12,8 +12,10 @@ class Book {
     this.author = author;
   }
 }
+
 // Book Constructor function (representing a book).
 const coll = new BookSet();
+
 if (localStorage.getItem('bookItems')) {
   const localBooks = JSON.parse(localStorage.getItem('bookItems'));
   localBooks.bookColl.forEach((item) => {
@@ -23,32 +25,3 @@ if (localStorage.getItem('bookItems')) {
 submitBtn.addEventListener('click', () => {
   coll.add(new Book(inputTitle.value, inputAuthor.value));
 });
-// Navigation
-const dateVisit = document.querySelector('.userDate');
-dateVisit.innerHTML = new Date();
-const listLink = document.querySelector('.books');
-const booksAddition = document.querySelector('.bookAdded');
-const contactUs = document.querySelector('.contactUs');
-const navigator = document.querySelectorAll('.book-nav');
-navigator.forEach((n, index) => n.addEventListener('click', () => {
-  navigator.forEach((link, number) => {
-    if (number === index) {
-      link.classList.add('active');
-    } else {
-      link.classList.remove('active');
-    }
-  });
-  if (index === 0) {
-    listLink.classList.remove('hidden');
-    booksAddition.classList.add('hidden');
-    contactUs.classList.add('hidden');
-  } else if (index === 1) {
-    listLink.classList.add('hidden');
-    booksAddition.classList.remove('hidden');
-    contactUs.classList.add('hidden');
-  } else {
-    listLink.classList.add('hidden');
-    booksAddition.classList.add('hidden');
-    contactUs.classList.remove('hidden');
-  }
-}));
